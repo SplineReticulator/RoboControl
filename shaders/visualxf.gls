@@ -1,0 +1,17 @@
+precision lowp float;
+
+varying vec4 fragColor;
+varying vec3 fragBarycentric;
+
+#extension GL_OES_standard_derivatives : enable
+
+float edgeFactor(){
+    vec3 d = fwidth(fragBarycentric);
+    vec3 a3 = smoothstep(vec3(0.001), d*1.25, fragBarycentric);
+    return min(min(a3.x, a3.y), a3.z); 
+}
+
+void main() {
+	gl_FragColor = vec4(mix(vec3(0.0), fragColor.rgb, edgeFactor()), 1.0);
+}
+

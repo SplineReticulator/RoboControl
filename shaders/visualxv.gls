@@ -1,0 +1,16 @@
+attribute vec4 position;
+attribute vec4 color;
+attribute vec3 barycentric;
+
+varying vec4 fragColor;
+varying vec3 fragBarycentric;
+
+uniform mat4 perspective_m;
+uniform mat4 view_m;
+uniform mat4 model_m;
+
+void main() {
+	fragColor = color;
+	fragBarycentric = barycentric;
+	gl_Position = perspective_m * model_m * position;
+}

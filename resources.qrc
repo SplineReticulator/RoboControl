@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/battery1.png</file>
+        <file>images/battery2.png</file>
+        <file>images/camera1_off.png</file>
+        <file>images/camera1_on.png</file>
+        <file>images/camera2_off.png</file>
+        <file>images/camera2_on.png</file>
+        <file>images/green_light.png</file>
+        <file>images/light_off.png</file>
+        <file>images/light_on.png</file>
+        <file>images/red_light.png</file>
+        <file>shaders/visualxf.gls</file>
+        <file>shaders/visualxv.gls</file>
+        <file>models/body.obj</file>
+        <file>images/group_joystick.png</file>
+        <file>images/group_manipulator.png</file>
+        <file>images/group_power.png</file>
+        <file>images/group_motors.png</file>
+        <file>models/flippers.obj</file>
+        <file>images/group_flippers.png</file>
+        <file>images/group_orientation.png</file>
+    </qresource>
+</RCC>
